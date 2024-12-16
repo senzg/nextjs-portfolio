@@ -2,20 +2,26 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import Icon from "./Cards/Icon";
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
+      <div className="flex flex-wrap justify-start">
+        <Icon iconPath={'/images/Icons/icons8-deep-learning-100.png'} iconName='Deep Learning' />
+        <Icon iconPath={'/images/Icons/icons8-javascript-100.png'} iconName='Javascript' />  
+        <Icon iconPath={'/images/Icons/icons8-typescript-96.png'} iconName='Typescript' />
+        <Icon iconPath={'/images/Icons/icons8-react-100.png'} iconName='React' />
+        <Icon iconPath={'/images/Icons/icons8-redux-100.png'} iconName='Redux' />
+        <Icon iconPath={'/images/Icons/icons8-express-js-100.png'} iconName='Express' />
+        <Icon iconPath={'/images/Icons/icons8-python-100.png'} iconName='Python' />  
+        <Icon iconPath={'/images/Icons/icons8-sql-100.png'} iconName='SQL' />
+        <Icon iconPath={'/images/Icons/icons8-r-100.png'} iconName='R Language' />
+        <Icon iconPath={'/images/Icons/icons8-jest-can-collect-code-coverage-information-from-entire-projects-100.png'} iconName='Jest' />
+        <Icon iconPath={'/images/Icons/icons8-hadoop-distributed-file-system-100.png'} iconName='Hadoop' />
+      </div>
     ),
   },
   {
@@ -87,8 +93,21 @@ const AboutSection = () => {
               Certifications{" "}
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-8 w-full">
             {TAB_DATA.find((t) => t.id === tab).content}
+            {/* <div className="flex flex-wrap justify-start">
+              <Icon iconPath={'/images/Icons/icons8-deep-learning-100.png'} iconName='Deep Learning' />
+              <Icon iconPath={'/images/Icons/icons8-javascript-100.png'} iconName='Javascript' />  
+              <Icon iconPath={'/images/Icons/icons8-typescript-96.png'} iconName='Typescript' />
+              <Icon iconPath={'/images/Icons/icons8-react-100.png'} iconName='React' />
+              <Icon iconPath={'/images/Icons/icons8-redux-100.png'} iconName='Redux' />
+              <Icon iconPath={'/images/Icons/icons8-express-js-100.png'} iconName='Express' />
+              <Icon iconPath={'/images/Icons/icons8-python-100.png'} iconName='Python' />  
+              <Icon iconPath={'/images/Icons/icons8-sql-100.png'} iconName='SQL' />
+              <Icon iconPath={'/images/Icons/icons8-r-100.png'} iconName='R Language' />
+              <Icon iconPath={'/images/Icons/icons8-jest-can-collect-code-coverage-information-from-entire-projects-100.png'} iconName='Jest' />
+              <Icon iconPath={'/images/Icons/icons8-hadoop-distributed-file-system-100.png'} iconName='Hadoop' />
+            </div> */}
           </div>
         </div>
       </div>

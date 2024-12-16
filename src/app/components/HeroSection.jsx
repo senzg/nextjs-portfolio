@@ -4,6 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Icon from "./Cards/Icon";
 
 const HeroSection = () => {
   return (
@@ -74,6 +75,7 @@ const HeroSection = () => {
           </div>
         </motion.div>
       </div>
+
     </section>
   );
 };
