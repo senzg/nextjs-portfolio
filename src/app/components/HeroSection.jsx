@@ -22,13 +22,13 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Judy",
+                "Steven",
                 1000,
                 "Web Developer",
                 1000,
-                "Mobile Developer",
+                "Data Scientist",
                 1000,
-                "UI/UX Designer",
+                "Fullstack Engineer",
                 1000,
               ]}
               wrapper="span"
@@ -63,16 +63,35 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] mt-8">
             <Image
-              src="/images/hero-image.png"
+              src="/images/steven-photo.jpg"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              className="rounded-full relative transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={400}
+              height={400}
             />
           </div>
         </motion.div>
+      </div>
+      <div className="text-white">
+      <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'We produce food for Mice',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'We produce food for Hamsters',
+        1000,
+        'We produce food for Guinea Pigs',
+        1000,
+        'We produce food for Chinchillas',
+        1000
+      ]}
+      wrapper="span"
+      speed={50}
+      style={{ fontSize: '2em', display: 'inline-block' }}
+      repeat={Infinity}
+    />
       </div>
     </section>
   );
