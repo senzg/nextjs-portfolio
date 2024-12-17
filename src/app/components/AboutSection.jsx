@@ -42,7 +42,7 @@ const TAB_DATA = [
         <li>AWS Cloud Practitioner</li>
         <li>Google Professional Cloud Developer</li>
       </ul>
-    ),
+    )
   },
 ];
 
@@ -95,19 +95,6 @@ const AboutSection = () => {
           </div>
           <div className="mt-8 w-full">
             {TAB_DATA.find((t) => t.id === tab).content}
-            {/* <div className="flex flex-wrap justify-start">
-              <Icon iconPath={'/images/Icons/icons8-deep-learning-100.png'} iconName='Deep Learning' />
-              <Icon iconPath={'/images/Icons/icons8-javascript-100.png'} iconName='Javascript' />  
-              <Icon iconPath={'/images/Icons/icons8-typescript-96.png'} iconName='Typescript' />
-              <Icon iconPath={'/images/Icons/icons8-react-100.png'} iconName='React' />
-              <Icon iconPath={'/images/Icons/icons8-redux-100.png'} iconName='Redux' />
-              <Icon iconPath={'/images/Icons/icons8-express-js-100.png'} iconName='Express' />
-              <Icon iconPath={'/images/Icons/icons8-python-100.png'} iconName='Python' />  
-              <Icon iconPath={'/images/Icons/icons8-sql-100.png'} iconName='SQL' />
-              <Icon iconPath={'/images/Icons/icons8-r-100.png'} iconName='R Language' />
-              <Icon iconPath={'/images/Icons/icons8-jest-can-collect-code-coverage-information-from-entire-projects-100.png'} iconName='Jest' />
-              <Icon iconPath={'/images/Icons/icons8-hadoop-distributed-file-system-100.png'} iconName='Hadoop' />
-            </div> */}
           </div>
         </div>
       </div>
