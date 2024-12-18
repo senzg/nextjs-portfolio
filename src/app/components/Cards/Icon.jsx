@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import iconImage from '../../../../public/images/Icons/icons8-express-js-100.png'
 
 function Icon({iconPath, iconName}) {
 return (
@@ -16,5 +15,3 @@ return (
 }
 
 export default Icon
-
-// text-[#ADB7BE] border-slate-600 hover:border-white rounded-full border-2 px-6 py-3 text-xl cursor-pointer
