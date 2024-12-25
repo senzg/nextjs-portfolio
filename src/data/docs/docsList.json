@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to Next.js",
+    "content": "This is the content for Introduction to Next.js."
+  },
+    {
+        "id": 2,
+        "title": "Introduction to React",
+        "content": "This is the content for Introduction to React."
+    },
+    {
+        "id": 3,
+        "title": "Introduction to JavaScript",
+        "content": "This is the content for Introduction to JavaScript."
+    },
+    {
+        "id": 4,
+        "title": "Introduction to CSS",
+        "content": "This is the content for Introduction to CSS."
+    },
+    {
+        "id": 5,
+        "title": "Introduction to HTML",
+        "content": "This is the content for Introduction to HTML."
+    }
+]
+    

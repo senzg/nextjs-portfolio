@@ -3,7 +3,7 @@
 import React from 'react'
 import Texteditor from "./components/Texteditor";
 
-export default function Blog() {
+export default function AddBlog() {
   return (
     <main className="flex min-h-screen flex-col">
 
