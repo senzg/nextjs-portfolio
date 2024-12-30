@@ -10,13 +10,18 @@ import {promises as fs} from 'fs';
 
 export default async function BlogLayout({ children }) {
     const allDocData =  await getBlogData();
-    const allDocTitle = allDocData.map((doc) => ({
-      id: doc.id,
-      title: doc.title}));
+    const allDocHeader = allDocData.map((repo) => ({
+      repoId: repo.repoId,
+      repoTitle: repo.repoTitle,
+      documents: repo.documents.map((doc) => ({
+        docId: doc.docId,
+        title: doc.title
+      }))
+    }));
 
     return (
       <>
-      <DocSidebar docsTitles={allDocTitle}/>
+      <DocSidebar docHeaders={allDocHeader}/>
       <section className="ml-24 sm:ml-48 md:ml-56 flex-1 p-8">{children}</section>    
       </>
     )
