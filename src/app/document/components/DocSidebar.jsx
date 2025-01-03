@@ -69,7 +69,7 @@ const DocSidebar = ({ docHeaders }) => {
                   </button>
                 </li>
               </div>
-              <div class='sub-repo' className='ml-8 '>
+              <div class='sub-repo' className='ml-8'>
                 {showSubmenu &&
                   <ul class="sub-menu" className={showSubmenu === docHeader.repoId ? 'block' : 'hidden'}>
                   {docHeader.documents.map(doc => (
@@ -125,7 +125,7 @@ const DocSidebar = ({ docHeaders }) => {
           {docHeaders.map(docHeader => (
             docHeader.documents.map(doc => (
               doc.title.toLowerCase().includes(searchKeyword.toLowerCase()) && (
-                <li key={doc.docId} className="py-2">
+                <li key={doc.docId} className="py-2 ml-4">
                   <Link 
                     href={`/document/${docHeader.repoId}/${doc.docId}`}
                   >
@@ -135,7 +135,7 @@ const DocSidebar = ({ docHeaders }) => {
             )
           ))))}
     
-          <hr className='border-[#33353F] border-2 my-4 mr-2' />
+          <hr className='border-[#33353F] border-1 my-4 mr-2' />
           <li key='add' className="py-2">
             <Link 
               href="/document/addDoc"
