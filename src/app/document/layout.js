@@ -1,5 +1,6 @@
 import DocSidebar from "./components/DocSidebar";
 import {promises as fs} from 'fs';
+import './sidebar.scss';
 
   async function getBlogData(){
       const filePath = process.cwd() + '/src/data/docs/docsList.json';
